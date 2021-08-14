@@ -35,7 +35,3 @@ function najduziPalindrom(string) {
   return najduzi;
 }
 console.log(najduziPalindrom("HYTBCABADEFGHABCDEDCBAGHTFYW12345678987654321ZWETYGDE"));
-
-// Dodatni zadaci sa predavanja
-// 1. Izvršiti sumiranje i množenje niza
-
