@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" name="user" placeholder="User" id="user" onfocusout="validacijaImena()">
+    <p class="greskaIme"></p> <br>
+
+    <input type="text" name="sure" placeholder="Surename" id="sure" onfocusout="validacijaPrezimena()">
+    <p class="greskaPrezime"></p> <br>
+
+    <input type="password" name="pass" placeholder="password" id="pass" onfocusout="validacijaPass()">
+    <p class="greskaPass"></p><br>
+
+    <input type="password" name="pass" placeholder="Confirm password" id="confPass" onfocusout="duplaValidacijaPass()">
+    <p class="greskaConfPass"></p> <br>
+
+    <input type="button" value="Izaberite kurs" id="checkBtn" onClick="coursChk()"><br>
+    <input type="checkbox" class="ckd" id="js" name="js" value="Javascript">
+    <label for="js"> Javascript</label><br>
+    <input type="checkbox" class="ckd" id="php" name="php" value="php">
+    <label for="php"> PHP</label><br>
+    <input type="checkbox" class="ckd" id="html" name="html" value="html">
+    <label for="html"> HTML</label><br><br>
+    <p class="greskaKurs"></p>    <br>
+
+    <select name="city" id="city">
+
+        <option disabled selected value>Izaberite grad</option>
+        <option value="Beograd">Beograd</option>
+        <option value="Novi Sad">Novi Sad</option>
+        <option value="Niš">Niš</option>
+
+    </select> <br>
+
+    <p>Izaberite pol:</p>
+    <label><input type="radio" name="radio" value="muški" id="muški"> Muški </label>
+    <label><input type="radio" name="radio" value="ženski" id="ženski"> Ženski </label>
+    <label><input type="radio" name="radio" value="Ko će ga znati, nešto moderno" id="moderno">Ko će ga znati, nešto moderno
+    </label><br><br>
+
+    <button type="submit" onclick="registracija()">registracija</button>
+
+    <div id="ispis">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
