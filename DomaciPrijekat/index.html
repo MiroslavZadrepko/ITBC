@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="stanje">
+        <button id="brisanjeSvega" style="margin-top: 10px;"> Brisanje svih podataka</button>
+        <p style="padding-top: 10px; margin-bottom: 5px;">Raspoloživo za tekući mesec:</p>
+        <p class="saldo"> 0 </p>
+        <div style="background-color: #03fc8c;">
+            <div style="float:left"> Prihodi </div>
+            <div class="zeleno" style="float:right"> 0 <font size="1" style="visibility: hidden; background-color: rgb(252, 167, 167); margin:4px; padding:4px; border-radius:5px;"> 0.00%</font></div>
+            <div style="clear:both;"></div>
+        </div>
+
+        <div style="background-color: #fc3d03;" >
+            <div style="float:left"> Rashodi </div>
+            <div class="crveno" style="float:right"> 0 <font size="1" style="background-color: rgb(252, 167, 167); margin:4px; padding:4px; border-radius:5px;"> 0.00%</font></div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="unos">
+        <form>
+            <select class="izborTransfera unosEl" id="izborTransfera" name="izbor">
+                <option value="izaberite">Izaberite transakciju</option>
+                <option value="prihod">Prihod</option>
+                <option value="rashod">Rashod</option>
+            </select>
+
+            <input class="unosi unosEl" type="text" placeholder="Opis transakcije" id="opisTransakcije">
+            <input class="unosi unosEl" type="number" placeholder="Iznos transakcije" id="iznosTransakcije">
+            <button class="submit unosEl" type="button" id="formaUnos"></button>
+        </form>
+
+    </div>
+
+    <br>
+
+    <div class="stanjeLista flex-container">
+        <div class="prihodi flex-item">
+            <h3 style="color: #03fc8c;">PRIHODI</h3>
+            <hr>
+        </div>
+
+        <div class="rashodi flex-item">
+            <h3 style="color: #fc3d03;">RASHODI</h3>
+            <hr>
+        </div>
+    </div>
+
+    <script type="module" src="./src/script.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,117 @@
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;   
+}
+
+body {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.stanje {
+    background-color: burlywood;
+    text-align: center;
+}
+
+.stanje div, .stanje p {
+    padding: 2vh 1vh 0vh 1vh;
+    max-width: 30vw;
+    margin: auto;   
+    margin-bottom: 30px;
+}
+
+.stanje div {
+    margin-bottom: 2vh;
+}
+
+.stanje p {
+    color: white;
+}
+
+.saldo {
+    font-size: 64px;;
+    margin-bottom: 4px;   
+    font-weight: 100;    
+}
+
+.zeleno,
+.crveno {
+    color: white;
+}
+
+.unosEl {
+    margin-right: 2vw;
+}
+
+.unos {
+    
+    padding-left: 24vw;
+}
+
+.izborTransfera {
+    height: 46px;
+}
+
+.unosi {
+    width: 220px;
+    height: 40px;
+}
+
+.submit {
+    margin-left: 10px;
+    padding: 16px;
+    background: url(https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-8/32/Accept-icon.png) no-repeat;
+    border-radius: 16px;
+    border: 1px solid #d9d9d9
+}
+  
+.flex-container {
+    display: flex;
+    flex-wrap: wrap ;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    
+}
+
+.flex-item {
+    flex: 0 1 auto;
+    margin: 0 5vw 0 5vw;
+    float: left;
+}
+
+.scndFlexCont{
+    display: flex;
+    flex-wrap: wrap ;
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+.scndFlexItem{
+    flex: 0 1 auto;
+    margin: 2vh 0;
+    min-width: 12vw;
+}
+
+#btnDelete,
+#brisanjeSvega{
+
+    background-color: #fc3d03;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 2vh 30px;
+    text-align: center;
+    text-shadow:1px 1px 3px black;
+    font-size: 16px;
+    }
+
+
+
