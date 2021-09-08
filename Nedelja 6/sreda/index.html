@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodavnica</title>
+</head>
+
+<body>
+    <form id="forma">
+        <span>username: </span> <input type="text" id="username">
+        <span>password: </span> <input type="password" id="password">
+        <input type="submit" value="LogIn" id="log">
+    </form>
+    <h3>Vasa korpa : <span id="span"></span></h3>
+
+
+    <div class="korpa">
+
+    </div>
+
+    <hr>
+    <h3>Proizvodi:</h3>
+    <div class="proizvodi">
+        <div class="proizvodHrana">
+            <p>Naziv: <span id="mleko">Mleko</span></p>
+            <p>Cena: <span id="cenaM" >100 dinara</span></p>
+            <p>Rok trajanja: <span id="rok">21.03.2022.</span></p>
+            <input type="number" name="" id="kolicina">
+            <button id="dodajHrana">Dodaj u korpu</button>
+        </div>
+        <div class="proizvodTehnika">
+            <p>Naziv: <span id="sporet">Sporet</span> </p>
+            <p>Cena: <span id="cenaS">30000 dinara</span></p>
+            <p>Garancija: <span id="garancija"> 5 god</span></p>
+            <input type="number" name="" id="kolicina">
+            <button id="dodajTehniku" >Dodaj u korpu</button>
+        </div>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
