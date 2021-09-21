@@ -1,8 +1,19 @@
 class ProductGroup {
     constructor(groupTitle, vat) {
         this.groupTitle = groupTitle
-        this.vat = vat 
+        this.vat = vat
     }
+    
+    // get groupTitle () {
+    //     return this.groupTitle
+    // }
+    // set groupTitle () { PROVERE SE KONVENCIONALNO OBAVJAJU U SETERIMA!!!
+    //    if(typeof groupTitle !== `string` || groupTitle = ``) {
+    //        console.log(`mora biti string i da ne bude prazno`);
+    //     return 
+    //    }
+    //    tjis.groupTitle=groupTitle          
+    // } 
 }
 
 class Product {

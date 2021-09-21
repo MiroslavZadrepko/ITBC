@@ -10,12 +10,8 @@ class Kupac {
     }
     displey() {
 
-        if (ime == ``) {
+        if (ime === undefined) {
             document.querySelector(`#span`).innerText = ` Vaša korpa je prazna, a morate i da se logujete`
-        }
-        else if (korpa === 0) {
-            document.querySelector(`#span`).innerText = `Vaša korpa je prazna`
-
         } else {
 
             korpa.forEach(element => {
@@ -35,7 +31,7 @@ document.querySelector(`#log`).addEventListener(`click`, (event) => {
     event.preventDefault()
     ime = document.querySelector(`#username`).value
     sifra = document.querySelector(`#password`).value
-    noviKupac = new Kupac(ime, sifra, noviPrehrambeni)
+    noviKupac = new Kupac(ime, sifra, korpa)
     console.log(noviKupac);
     document.querySelector(`#span`).innerText = `${ime}`
     noviKupac.displey()
@@ -59,7 +55,8 @@ document.querySelector(`#dodajHrana`).addEventListener(`click`, (event) => {
     noviPrehrambeni = new Prehrambeni(naziv, cena, 5, rok)
     korpa.push(noviPrehrambeni)
     console.log(korpa);
-    noviPrehrambeni.display()
+    
+   
 })
 
 class Prehrambeni extends Proizvod {
@@ -68,7 +65,9 @@ class Prehrambeni extends Proizvod {
         this.rok = rok
     }
     display() {
-
+        if (ime === undefined) {
+            document.querySelector(`#span`).innerText = ` Vaša korpa je prazna, a morate i da se logujete`
+        } else {
         korpa.forEach(element => {
             document.querySelector(`.korpa`).append(divProizvod)
             divProizvod.innerHTML = `
@@ -77,10 +76,11 @@ class Prehrambeni extends Proizvod {
                 <p>Rok trajanja: ${element.rok}</p>
                 <p>Garancija: ${element.garancija}</p>
                 <button class = "brisanje">Obrisi iz korpe</button>`
-        })
+        })}
     }
 
-}
+} 
+
 
 document.querySelector(`#dodajTehniku`).addEventListener(`click`, (event) => {
     event.preventDefault()
@@ -91,8 +91,6 @@ document.querySelector(`#dodajTehniku`).addEventListener(`click`, (event) => {
     novaTehnika = new BelaTehnika(naziv, cena, 5, garancija)
     korpa.push(novaTehnika)
     console.log(korpa);
-
-    novaTehnika.displey()
 })
 
 
@@ -103,6 +101,10 @@ class BelaTehnika extends Proizvod {
     }
     display() {
 
+        if (ime === undefined) {
+            document.querySelector(`#span`).innerText = ` Vaša korpa je prazna, a morate i da se logujete`
+        } else {
+
         korpa.forEach(element => {
             document.querySelector(`.korpa`).append(divProizvod)
             divProizvod.innerHTML = `
@@ -111,7 +113,7 @@ class BelaTehnika extends Proizvod {
                 <p>Rok trajanja: ${element.rok}</p>
                 <p>Garancija: ${element.garancija}</p>
                 <button class = "brisanje">Obrisi iz korpe</button>`
-        })
+        })}
     }
 }
 
