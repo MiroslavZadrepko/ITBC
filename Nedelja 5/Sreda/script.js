@@ -136,5 +136,3 @@ function registracija() {
     chkdCourse = document.querySelector('.ckd:checked').checked=false;
     pol = document.querySelector('input[name="radio"]:checked').checked = false;
 }
-
-
