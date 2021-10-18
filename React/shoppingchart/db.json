@@ -1,0 +1,70 @@
+{
+  "products": [
+    {
+      "name": "Beans - Long, Chinese",
+      "price": 11,
+      "info": "Neki pasulj, verovatno ljuto",
+      "id": "ed79a533-2756-4393-9fff-184b4c6472e4"
+    },
+    {
+      "name": "Pasta - Ravioli",
+      "price": 89,
+      "info": "Ovo goji",
+      "id": "c1bd4264-299f-4507-8763-a7906ad9018f"
+    },
+    {
+      "name": "Mangoes",
+      "price": 86,
+      "info": "Nikad čuo",
+      "id": "fa0350b7-dd2f-4fe8-b5e0-2e819128c322"
+    },
+    {
+      "name": "Syrup - Monin, Irish Cream",
+      "price": 73,
+      "info": null,
+      "id": "7906089e-c195-480c-9738-8c82bbf6d1a7"
+    },
+    {
+      "name": "Chef Hat 25cm",
+      "price": 10,
+      "info": null,
+      "id": "d25953f3-ad7f-42ee-9e50-af13dc438df7"
+    },
+    {
+      "name": "Beef - Tongue, Cooked",
+      "price": 92,
+      "info": null,
+      "id": "95e11f28-c61e-42dd-97f1-f01ea68c5359"
+    },
+    {
+      "name": "Basil - Dry, Rubbed",
+      "price": 51,
+      "info": null,
+      "id": "e26130a7-8e99-4280-b94d-0fc06c578c0e"
+    },
+    {
+      "name": "Vermouth - Sweet, Cinzano",
+      "price": 10,
+      "info": null,
+      "id": "c14949dc-4e24-4f9d-8453-5557859ef4b0"
+    },
+    {
+      "name": "Crab - Dungeness, Whole, live",
+      "price": 76,
+      "info": null,
+      "id": "66d7b619-28ee-429a-a148-1982db5135fd"
+    },
+    {
+      "name": "Grapes - Red",
+      "price": 27,
+      "info": null,
+      "id": "e58ace21-22c8-4737-bbcd-a90fed39b9e7"
+    },
+    {
+      "name": "Auto",
+      "price": 300,
+      "info": null,
+      "id": "e58ace21-2221-4737-bbcd-a90fed39b9e7"
+    }
+  ]
+}

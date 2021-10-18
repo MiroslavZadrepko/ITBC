@@ -1,0 +1,28 @@
+{
+  "messages": [
+    {
+      "id": "1",
+      "username": "Pera",
+      "message": "Hello!",
+      "time": "12:40:50"
+    },
+    {
+      "id": "2",
+      "username": "Zika",
+      "message": "Hello from json!",
+      "time": "15:50:50"
+    },
+    {
+      "username": "POSTMAN",
+      "message": "HELLO FROM POSTMAN!",
+      "time": "16:00:34",
+      "id": "IM9OESG"
+    },
+    {
+      "username": "andjela",
+      "message": "novo",
+      "time": "18:52:9",
+      "id": "e-s5Gq2"
+    }
+  ]
+}

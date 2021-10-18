@@ -1,0 +1,42 @@
+{
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Citat broj 1",
+      "autor": "Autor1",
+      "slika": "/images/logo512.png"
+    },
+    {
+      "text": "novi q",
+      "autor": "novi a",
+      "id": 2,
+      "slika": "/images/logo512.png"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "Pera",
+      "email": "pera@gmail.com",
+      "password": "pera123"
+    },
+    {
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 2
+    },
+    {
+      "username": "Milica",
+      "email": "rjgrjkekjej",
+      "password": "hfgdghgdfjd",
+      "id": 3
+    },
+    {
+      "username": "fdhgjdfhjfdg",
+      "email": "fgfdgfd",
+      "password": "gfddgd",
+      "id": 4
+    }
+  ]
+}
